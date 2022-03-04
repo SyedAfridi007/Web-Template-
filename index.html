@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syed Afridi</title>
+    <link rel="stylesheet" href="style.css">
+
+ 
+
+    <!--------Font Awosome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <!--------Swipper.js CDN-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!--------Typing Effect CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+
+    <!----Nav Click Auto Scroll cdn -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!----Animation AOS CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  
+
+</head>
+<body>
+
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "106385007543185");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v12.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+<!-----------------------------------Preloader---------------------------->
+
+<div id="preloader"></div>
+
+<!-----------------------------------Header---------------------------->
+<section id="header">
+  <div class="header-container">
+
+    <div class="header-row">
+
+           <div class="navigation">
+
+            <div class="logo" data-aos="slide-down">
+               <a href="index.html"> <h1> <span>S</span>yed <span>A</span>fridi</h1>
+           </div>
+
+           <div class="nav-links" id="nl">
+
+               <i class="fa fa-times" onclick="HideMenu()"></i>
+                <ul>
+                    <li> <a href="#header">Home</a> </li>
+                    <li> <a href="#about">About</a> </li>
+                    <li> <a href="#service">Service</a> </li>
+                    <li> <a href="#skill">Skill</a> </li>
+                    <li> <a href="#showcase"> Showcase</a></li>
+                    <li> <a href="#contact">Contact</a> </li>
+               </ul>
+
+           </div>
+
+           <i class="fa fa-bars" onclick="ShowMenu()" ></i>
+
+        </div>   
+
+
+        <div class="header-row-2" data-aos="zoom-in">
+            <h3> Hello, my name is</h3>
+            <h1> Syed Afridi</h1>
+            <h2> And im a <span class="typing"></span></h2>
+            <a href="http://">Hire Me</a>
+
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-----------------------------------About---------------------------->
+<section id="about">
+    <div class="about-container">
+        <h1>About me</h1>
+        <p>who i am</p>
+
+        <div class="about-row">
+            
+            <div class="about-img" data-aos="flip-up">
+
+                <img src="img/profile-img.jpg" alt="">
+
+            </div>
+
+            <div class="about-text">
+
+                <h1> Hi Folks..</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque autem excepturi
+                     eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus accusamus alias fuga nihil dolorum quae. 
+                     Explicabo illo unde, odio consequatur ipsam possimus veritatis, placeat, ab molestiae velit inventore exercitationem 
+                     consequuntur blanditiis omnis beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum non.
+                </p>
+                <a href="http://">Download CV</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-----------------------------------Services---------------------------->
+<section id="service">
+<div class="services-container">
+
+        <h1>My Services</h1>
+        <p>what i provide</p>
+
+    <div class="services-row">
+
+        <div class="services-card" data-aos="zoom-in">
+            <div class="services-card-body">
+                <i class="fas fa-code"></i>
+                <h2>Websiite Building</h2>
+                <h4>Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Rem quia sunt, quasi 
+                    quo illo enim.
+                </h4>  
+            </div>
+        </div>
+
+
+        <div class="services-card" data-aos="zoom-in">
+            <div class="services-card-body">
+                <i class="fas fa-cogs"></i>
+                <h2>Website Maintanace</h2>
+                <h4>Lorem ipsum dolor sit amet consectetur,
+                     adipisicing elit. Rem quia sunt, quasi 
+                     quo illo enim.
+                </h4>  
+
+                
+            </div>
+        </div>
+
+        <div class="services-card" data-aos="zoom-in">
+            <div class="services-card-body">
+                <i class="fas fa-rocket"></i>
+                <h2>Websiite Boosting</h2>
+                <h4>Lorem ipsum dolor sit amet consectetur,
+                     adipisicing elit. Rem quia sunt, quasi 
+                     quo illo enim.
+                </h4>  
+                
+            </div>
+        </div>
+
+        <div class="services-card" data-aos="zoom-in">
+            
+            <div class="services-card-body">
+
+                <i class="fas fa-paint-brush"></i>
+                <h2>UI/UX Design</h2>
+                <h4>Lorem ipsum dolor sit amet consectetur,
+                     adipisicing elit. Rem quia sunt, quasi 
+                     quo illo enim.
+                </h4>  
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-----------------------------------Skill---------------------------->
+
+<section id="skill">
+    <div class="skill-container">
+        <h1>My Skills</h1>
+        <p>what i know</p>
+        <div class="skill-row">
+            <div class="skill-text">
+                <h3>My skill & experiences</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     A fugit dolor nobis ipsam repellat magni sapiente? 
+                     Tempora facilis error necessitatibus qui consequuntur.
+                     Possimus, sed quaerat! Quasi possimus voluptates 
+                     voluptatem molestiae?
+                </p>
+                <a href="http://">Read more</a>
+
+            </div>
+            <div class="skill-list-container">
+
+                    <div class="skill-list-1" data-aos="flip-up">
+                        
+                        <div class="skill-name">
+                            <h3>HTML</h3>
+                        </div>
+                        <div class="skill-percentage">
+                            <h4>90%</h4>
+                        </div>
+                       
+                    </div>
+
+                    <div class="skill-list-2"  data-aos="flip-up">
+                        <div class="skill-name">
+                            <h3>CSS</h3>
+                        </div>
+                        <div class="skill-percentage">
+                            <h4>85%</h4>
+                        </div>
+                    </div>
+
+                    <div class="skill-list-3" data-aos="flip-up">
+                        <div class="skill-name">
+                            <h3>JavaScrypt</h3>
+                        </div>
+                        <div class="skill-percentage">
+                            <h4>77%</h4>
+                        </div>
+                    </div>
+
+                    <div class="skill-list-4" data-aos="flip-up">
+                        <div class="skill-name">
+                            <h3>PHP</h3>
+                        </div>
+                        <div class="skill-percentage">
+                            <h4>80%</h4>
+                        </div>
+                    </div>
+
+                    <div class="skill-list-5"data-aos="flip-up">
+                        <div class="skill-name">
+                            <h3>MangoDB</h3>
+                        </div>
+                        <div class="skill-percentage">
+                            <h4>87%</h4>
+                        </div>
+                    </div>
+
+                    <div class="skill-list-6"data-aos="flip-up">
+                        <div class="skill-name">
+                            <h3>UI/UX Design</h3>
+                        </div>
+                        <div class="skill-percentage">
+                            <h4>95%</h4>
+                        </div>
+                    </div>
+
+                    <div class="skill-list-7"data-aos="flip-up">
+                        <div class="skill-name">
+                            <h3>WordPress</h3>
+                        </div>
+                        <div class="skill-percentage">
+                            <h4>90%</h4>
+                        </div>
+                    </div>   
+            </div>
+              
+
+                
+        </div>
+        
+    </div>
+</section>
+
+<section>
+
+<!-----------------------------------Shwocase--VIP Class-------------------------->
+<section id="showcase">
+
+<div class="swiper-container" data-aos="zoom-in">
+
+    <h1>Project Showcase</h1>
+    <p>some of my best work </p>
+
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+
+      <div class="swiper-slide">
+        <img src="img/mazenda.png" alt="">
+        <h3>Mezenda Fashion</h3>
+        <a href="http://">Visit Now</a>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="img/websoft.png" alt="">
+        <h3>Web Soft</h3>
+        <a href="http://">Visit Now</a>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="img/sa.png" alt="">
+        <h3>Syed Afridi Portfolio</h3>
+        <a href="http://">Visit Now</a>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="img/webdevpsycho.png" alt="">
+        <h3>WebDevPsycho</h3>
+        <a href="http://">Visit Now</a>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="img/thebook.png" alt="">
+        <h3>TheBooks</h3>
+        <a href="http://">Visit Now</a>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="img/eduford.png" alt="">
+        <h3>EduFord University</h3>
+        <a href="http://">Visit Now</a>
+      </div>
+
+    </div>
+
+      <div class="swiper-slide" data-swiper-autoplay="2000"> 
+</div>
+
+</section>
+<!-----------------------------------Contact---------------------------->
+
+<section id="contact">
+    <div class="contact-container">
+        <h1>Contact</h1>
+        <p>get in touch</p>
+        <div class="contact-row">
+            <div class="contact-left-col">
+                <h3>Get In Touch</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates beatae libero cumque
+                   facere nihil excepturi aliquam nam porro, sit consequuntur neque laudantium accusamus delectus
+                   non optio ipsam, magnam corrupti. Dolorum!
+                </p>
+                <div class="information" >
+                    <div class="contact-right-sub-row" data-aos="flip-down">
+                        <i class="fas fa-user"></i>
+                        <div class="information-title">
+                            <h4>Name</h4>
+                            <h5>Syed Afridi</h5>
+                        </div>
+                    </div>
+
+                    <div class="contact-right-sub-row"data-aos="flip-down">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="information-title">
+                            <h4>Address</h4>
+                            <h5>Dhaka, Bangladesh</h5>
+                        </div>
+                    </div>
+
+                    <div class="contact-right-sub-row"data-aos="flip-down">
+                        <i class="fas fa-envelope"></i>
+                        <div class="information-title">
+                            <h4>Email</h4>
+                            <h5>syedafridi401@gmail.com</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+                <h3>Follow Me In Social Site</h3>
+                <div class="social-icon" data-aos="zoom-in">
+                    <i class="fab fa-facebook" ></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-github"></i>
+
+                </div>
+
+
+            </div>
+            <div class="contact-right-col" data-aos="zoom-out">
+                <h3>Message Me</h3>
+                <div class="forms">
+                    <div class="form-right-sub-col">
+                        <input type="text", placeholder="Name" required>
+                        <input type="email", placeholder="Email" required>
+                    </div>
+                    <input type="text", placeholder="Subject" required>
+                    <textarea name="text" placeholder="Write here..." cols="30" rows="10" required></textarea>
+                    <a href="http://">Send Message</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-----------------------------------Footer---------------------------->
+
+<section>
+    <div class="footer-container">
+       <span>Created By <a href="https://">Syed Afridi</a> | <span class="far fa-copyright"></span> 2020 All rights reserved.</span>
+    </div>
+</section>
+
+</body>
+</html>
+
+
+
+
+
+<!---------------jQuerry-------------------->
+
+
+<!---------------Typing Animation-------------------->
+<script>
+
+var typed = new Typed(".typing", {
+    strings: ["Web Developer.","UI/UX Designer."," Freelancer.","Entrepreneur."],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});
+
+</script>
+
+
+<!---------------Sliding Showcase Animation-------------------->
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+
+var swiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  direction: 'horizontal',
+  slidesPerView: '3',
+  spaceBetween: 50,
+  loop: true,
+  centeredSlides:true,
+  grabCursor:true,
+  slideToClickedSlide:true,
+  effect:'coverflow',
+  speed: 1000,
+  //autoHeight: false,	
+  //effect:'slide',
+  
+  autoplay: {
+   delay: 3500,
+ },
+ 
+});
+</script>
+
+<!---------------Auto Scroll-------------------->
+
+<script>
+
+    var scroll = new SmoothScroll('a[href*="#"]', {
+	    speed: 1500,
+	    speedAsDuration: true
+    });
+
+</script>
+
+<!------------------Animation AOS---------------------->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+      offset:200,
+      duration:1300,
+      delay:300,   
+  });
+</script>
+
+<!---------------Preloader-------------------->
+
+<script>
+    var loader=document.getElementById("preloader");
+    window.addEventListener("load",function(){
+
+        loader.style.display="none";
+    })
+</script>
+
+
+<!---------------Slide Nav bar-------------------->
+
+<script>
+    var nl=document.getElementById("nl");
+
+    function ShowMenu()
+    {
+        nl.style.right ="0";
+    }
+    function HideMenu()
+    {
+        nl.style.right ="100%";
+    }
+</script>

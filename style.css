@@ -1,0 +1,1599 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+}
+/*-----------------------------Preloader-------------------*/
+#preloader{
+     
+    background:white ;
+    background-image: url(img/preloder.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+    
+}
+/*-----------------------------Header-------------------*/
+.header-container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.header-row{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 8%; 
+    margin-right: 8%; 
+    padding: 20px;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.navigation .fa{
+
+    display: none;
+}
+
+.logo a{
+    text-decoration: none;
+}
+.logo h1{
+
+    color: #FCFCFC;
+    font-size: 35px;
+    cursor: pointer;
+    
+}
+.logo span{
+
+    color: chocolate;
+}
+
+
+.nav-links ul{
+
+    list-style: none;
+    color:#FCFCFC;
+}
+
+.nav-links ul li{
+
+    display: inline-block;
+    margin: 0 20px 0 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 18px;
+   
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-links ul li a::after{
+    content: '';
+    height: 3px;
+    width:0%;
+    background-color: chocolate;
+    display: block;
+    top:0;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li a:hover{
+   color: chocolate;
+}
+.nav-links ul li:hover a::after{ 
+    width: 100%;
+}
+
+.header-row-2{
+
+    margin: 12% 10%;  
+}
+
+.header-row-2 h3{
+
+    color: #FCFCFC;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.header-row-2 h3{
+
+    color: #FCFCFC;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.header-row-2 h1{
+
+    color: #FCFCFC;
+    font-size: 110px;
+    font-weight: 500;
+}
+
+
+.header-row-2 h2{
+
+    color: #FCFCFC;
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 40px ;
+}
+
+.header-row-2 h2 span{
+
+    color: chocolate;
+}
+
+.header-row-2 a{
+
+    color: #FCFCFC;
+    font-size: 25px;
+    font-weight: 400;
+    text-decoration: none;
+    background:transparent;
+    border: 1px solid chocolate;
+    box-sizing: border-box;
+    padding: 10px 30px;
+    margin-top: 30px;
+    transition: 0.5s;
+
+}
+
+.header-row-2 a:hover{
+
+    background-color: chocolate;
+}
+
+
+/*-----------------------------About-------------------*/
+
+
+.about-container{
+
+    width: 100%;
+    height: 75vh;
+    margin-top: 5%;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+
+}
+
+.about-container h1{
+
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+
+}
+
+.about-container p{
+
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    color: chocolate;
+
+}
+
+.about-container p::before{
+
+    content: '';
+    height: 4px;
+    width: 40px;
+    background-color:black;
+    position: absolute;
+    top:65px;
+    left: 45%;
+}
+.about-container p::after{
+
+    content: '';
+    height: 4px;
+    width: 40px;
+    background-color:black;
+    position: absolute;
+    top:65px;
+    right: 45%;
+}
+
+.about-row{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+
+}
+
+.about-img {
+
+    width: 30%;
+    margin: 4% 0 0 20%;
+}
+.about-img img {
+
+    width: 400px;
+    border-radius: 40px;
+    
+}
+.about-text   {
+
+    width: 30%;
+    margin: 4% 20% 0 0;  
+}
+
+.about-text h1  {
+
+    width: 30%;
+    font-size: 28px;
+    text-align: left;
+    margin-top: 20px;
+    
+}
+
+.about-text p  {
+
+    width: 100%;
+    text-align: left; 
+    font-size: 18px;
+    font-weight: 500;
+    margin: 20px 0 50px 0 ;
+    
+}
+
+.about-text a{
+
+    text-decoration: none;
+    color: chocolate;
+    background: transparent;
+    border: 2px solid chocolate;
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    transition: 0.8s;
+}
+
+.about-text a:hover{
+
+    color: white;
+    background: chocolate;
+    border: 2px solid chocolate;
+}
+
+
+/*-----------------------------Services-------------------*/
+
+
+.services-container{
+
+    width: 100%;
+    height: 75vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    position: relative;
+}
+
+.services-container h1{
+
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+    color: white;
+    padding: 100px 0 0 0;
+
+}
+
+.services-container  p{
+
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    color: chocolate;
+
+}
+
+.services-container p::before{
+
+    content: '';
+    height: 4px;
+    width: 40px;
+    background-color:white;
+    position: absolute;
+    top:165px;
+    left: 43.5%;
+}
+.services-container p::after{
+
+    content: '';
+    height: 4px;
+    width: 40px;
+    background-color:white;
+    position: absolute;
+    top:165px;
+    right: 43.5%;
+}
+.services-row{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 100px 60px 0 60px;
+}
+
+.services-card{
+
+    width: 21%;
+    background: #222;
+    border-radius: 10px; 
+    
+}
+
+.services-card-body{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    transition: all 0.6s ease;
+      
+}
+
+.services-card-body .fas{
+
+    color: chocolate;
+    font-size: 65px;
+    margin-top: 5%;
+      
+}
+
+.services-card-body h2{
+
+    font-size: 24px;
+    margin-top: 10px;
+    color: white;
+         
+}
+
+.services-card-body h4{
+
+    font-size: 17px;
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+     
+}
+
+.services-card:hover{
+
+    background:chocolate;
+        
+}
+
+.services-card:hover .services-card-body{
+       
+    transform: scale(1.08);
+        
+}
+.services-card:hover .fas{
+
+    color: white;
+}
+
+/*-----------------------------Skill-------------------*/
+
+.skill-container{
+
+    width: 100%;
+    height: 75vh;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.skill-container h1{
+
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+    color: black;
+    padding: 100px 0 0 0;
+
+}
+
+.skill-container  p{
+
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    color: chocolate;
+ 
+}
+
+.skill-container p::before{
+
+    content: '';
+    height: 4px;
+    width: 40px;
+    background-color:black;
+    position: absolute;
+    top:165px;
+    left: 43.5%;
+}
+.skill-container p::after{
+
+    content: '';
+    height: 4px;
+    width: 40px;
+    background-color:black;
+    position: absolute;
+    top:165px;
+    right: 43.5%;
+}
+.skill-row{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.skill-text{
+
+    width: 30%;
+    margin: 4% 0% 0 20%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    
+}
+.skill-text h3{
+     text-align: left;
+     margin-top: 20px;
+     font-size: 28px;
+}
+
+.skill-text p{
+
+    width: 100%;
+    text-align: left; 
+    font-size: 18px;
+    font-weight: 500;
+    margin: 20px 0 50px 0 ;
+    
+}
+
+.skill-text a{
+
+    text-decoration: none;
+    color: chocolate;
+    background: transparent;
+    border: 2px solid chocolate;
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    transition: 0.8s;
+}
+
+.skill-text a:hover{
+
+    color: white;
+    background: chocolate;
+    border: 2px solid chocolate;
+}
+
+.skill-list-container{
+    width: 30%;
+    margin: 4% 20% 0% 0%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.skill-list-1{
+    width: 70%;
+    display: flex;
+    justify-content: space-around; 
+    position: relative;
+    margin-bottom:50px;
+}
+.skill-name h3{
+    text-align: left;
+    width: 100%;
+    left: 0;
+    position: absolute;
+}
+
+.skill-percentage h4{
+    text-align: right;
+    position: absolute;
+    right: 0;
+    font-size: 19px;
+}
+
+/*------Animation Html-------------*/
+.skill-list-1{
+    width: 70%;
+    display: flex;
+    justify-content: space-around; 
+    position: relative;
+    margin-bottom:20px;
+}
+
+.skill-list-1::before{
+
+    content: '';
+    width: 100%;
+    height: 6px;
+    left: 0;
+    top: 30px;
+    position: absolute;
+    background: lightgray ;  
+}
+.skill-list-1::after{
+
+    content: '';
+    width: 0%;
+    height: 6px;
+    left: 0;
+    top: 30px;
+    position: absolute;
+    background: coral ; 
+    animation-duration: 1.8s;
+    animation-delay:0.3s ;
+    animation-fill-mode: forwards; 
+    animation-direction:inherit;
+    
+}
+.skill-list-1::after{
+    animation-name: HTML;
+}
+
+@keyframes HTML{
+    to{
+        width:90%;
+        height: 6px;
+        background: chocolate;        
+    }
+}
+
+/*------Animation CSS-------------*/
+.skill-list-2{
+    width: 70%;
+    display: flex;
+    justify-content: space-around; 
+    position: relative;
+    margin-bottom:20px;
+}
+
+.skill-list-2::before{
+
+    content: '';
+    width: 100%;
+    height: 6px;
+    left: 0;
+    top: 30px;
+    position: absolute;
+    background: lightgray ;  
+}
+.skill-list-2::after{
+
+    content: '';
+    width: 0%;
+    height: 6px;
+    left: 0;
+    top: 30px;
+    position: absolute;
+    background: coral ; 
+    animation-duration: 1.8s ;
+    animation-delay:0.4s ;
+    animation-fill-mode: forwards; 
+    animation-direction:inherit;
+    
+}
+.skill-list-2::after{
+    animation-name: CSS;
+}
+
+@keyframes CSS{
+    to{
+        width:85%;
+        height: 6px;
+        background: chocolate;        
+    }
+}
+/*------Animation JavaScrypt-------------*/
+.skill-list-3{
+    width: 70%;
+    display: flex;
+    justify-content: space-around; 
+    position: relative;
+    margin-bottom:20px;
+}
+
+.skill-list-3::before{
+
+    content: '';
+    width: 100%;
+    height: 6px;
+    left: 0;
+    top: 30px;
+    position: absolute;
+    background: lightgray ;  
+}
+.skill-list-3::after{
+
+    content: '';
+    width: 0%;
+    height: 6px;
+    left: 0;
+    top: 30px;
+    position: absolute;
+    background: coral ; 
+    animation-duration: 1.8s ;
+    animation-delay:0.5s ;
+    animation-fill-mode: forwards; 
+    animation-direction:inherit;
+    
+}
+.skill-list-3::after{
+    animation-name: JS;
+}
+
+@keyframes JS{
+    to{
+        width:77%;
+        height: 6px;
+        background: chocolate;        
+    }
+}
+
+/*------Animation PHP-------------*/
+.skill-list-4{
+    width: 70%;
+    display: flex;
+    justify-content: space-around; 
+    position: relative;
+    margin-bottom:20px;
+}
+
+.skill-list-4::before{
+
+    content: '';
+    width: 100%;
+    height: 6px;
+    left: 0;
+    top: 30px;
+    position: absolute;
+    background: lightgray ;  
+}
+.skill-list-4::after{
+
+    content: '';
+    width: 0%;
+    height: 6px;
+    left: 0;
+    top: 30px;
+    position: absolute;
+    background: coral ; 
+    animation-duration: 1.8s ;
+    animation-delay:0.6s ;
+    animation-fill-mode: forwards; 
+    animation-direction:inherit;
+    
+}
+.skill-list-4::after{
+    animation-name: PHP;
+}
+
+@keyframes PHP{
+    to{
+        width:80%;
+        height: 6px;
+        background: chocolate;        
+    }
+}
+
+/*------Animation MangoDB-------------*/
+.skill-list-5{
+    width: 70%;
+    display: flex;
+    justify-content: space-around; 
+    position: relative;
+    margin-bottom:20px;
+}
+
+.skill-list-5::before{
+
+    content: '';
+    width: 100%;
+    height: 6px;
+    left: 0;
+    top: 30px;
+    position: absolute;
+    background: lightgray ;  
+}
+.skill-list-5::after{
+
+    content: '';
+    width: 0%;
+    height: 6px;
+    left: 0;
+    top: 30px;
+    position: absolute;
+    background: coral ; 
+    animation-duration: 1.8s ;
+    animation-delay:0.7s ;
+    animation-fill-mode: forwards; 
+    animation-direction:inherit;
+    
+}
+.skill-list-5::after{
+    animation-name: MD;
+}
+
+@keyframes MD{
+    to{
+        width:87%;
+        height: 6px;
+        background: chocolate;        
+    }
+}
+
+/*------Animation UI/UX Design-------------*/
+
+.skill-list-6{
+    width: 70%;
+    display: flex;
+    justify-content: space-around; 
+    position: relative;
+    margin-bottom:20px;
+}
+
+.skill-list-6::before{
+
+    content: '';
+    width: 100%;
+    height: 6px;
+    left: 0;
+    top: 30px;
+    position: absolute;
+    background: lightgray ;  
+}
+.skill-list-6::after{
+
+    content: '';
+    width: 0%;
+    height: 6px;
+    left: 0;
+    top: 30px;
+    position: absolute;
+    background: coral ; 
+    animation-duration: 1.8s ;
+    animation-delay:0.8s ;
+    animation-fill-mode: forwards; 
+    animation-direction:inherit;
+    
+}
+.skill-list-6::after{
+    animation-name: UUD;
+}
+
+@keyframes UUD{
+    to{
+        width:95%;
+        height: 6px;
+        background: chocolate;        
+    }
+}
+/*------Animation Wordpress-------------*/
+
+.skill-list-7{
+    width: 70%;
+    display: flex;
+    justify-content: space-around; 
+    position: relative;
+    margin-bottom:20px;
+}
+
+.skill-list-7::before{
+
+    content: '';
+    width: 100%;
+    height: 6px;
+    left: 0;
+    top: 30px;
+    position: absolute;
+    background: lightgray ;  
+}
+.skill-list-7::after{
+
+    content: '';
+    width: 0%;
+    height: 6px;
+    left: 0;
+    top: 30px;
+    position: absolute;
+    background: coral ; 
+    animation-duration: 1.8s ;
+    animation-delay:0.9s ;
+    animation-fill-mode: forwards; 
+    animation-direction:inherit;
+    
+}
+.skill-list-7::after{
+    animation-name: WP;
+}
+
+@keyframes WP{
+    to{
+        width:90%;
+        height: 6px;
+        background: chocolate;        
+    }
+}
+
+/*-----------------------------------Showcase-------------------*/
+
+
+.swiper-container{
+
+    width: 100%;
+    height: 75vh;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    background-color: black;
+    overflow: hidden;
+}
+
+.swiper-container h1{
+
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+    color: white;
+    padding: 100px 0 0 0;
+
+}
+
+.swiper-container p{
+
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    color: chocolate;
+
+}
+
+.swiper-container p::before{
+
+    content: '';
+    height: 4px;
+    width: 40px;
+    background-color:white;
+    position: absolute;
+    top:165px;
+    left: 41.2%;
+}
+.swiper-container p::after{
+
+    content: '';
+    height: 4px;
+    width: 40px;
+    background-color:white;
+    position: absolute;
+    top:165px;
+    right: 41.2%;
+}
+
+.swiper-wrapper{
+  
+    align-items: center;
+    
+     
+}
+
+
+.swiper-slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    border-radius: 40px;
+    margin-top: 0%;
+    cursor: pointer;
+    
+
+
+}
+.swiper-slide-active{
+    transform: scale(1.2);
+    transition: .4s;
+}
+
+.swiper-slide h3{
+
+    color: white;
+    font-size: 22px;
+    margin-top: 10px;
+    
+
+}
+.swiper-slide a{
+    text-decoration: none;
+    color: chocolate;
+    background: transparent;
+    border: 1px solid chocolate;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: 0.5s;
+
+}
+
+.swiper-slide a:hover{
+    color: white;
+    background: chocolate;
+}
+
+.swiper-slide  img{
+
+    width:600px;
+    margin-top: -150px;
+
+}
+/*-----------------------------Contact-------------------*/
+
+.contact-container{
+
+    width: 100%;
+    height: auto;
+    margin-bottom: 80px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    
+}
+
+.contact-container h1{
+
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+    color: black;
+    padding: 100px 0 0 0;
+
+}
+
+.contact-container p{
+
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    color: chocolate;
+
+}
+
+.contact-container p::before{
+
+    content: '';
+    height: 4px;
+    width: 40px;
+    background-color:black;
+    position: absolute;
+    top:165px;
+    left: 44.2%;
+}
+.contact-container p::after{
+
+    content: '';
+    height: 4px;
+    width: 40px;
+    background-color:black;
+    position: absolute;
+    top:165px;
+    right: 44.2%;
+}
+
+.contact-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 3%;
+}
+.contact-left-col{
+
+    width: 30%;
+    text-align: left;
+    margin-left: 20%;
+}
+
+.contact-left-col h3{
+    text-align: left;
+    font-size: 26px;
+    margin-top: 40px;
+}
+
+
+.contact-left-col h4{
+    text-align: left;
+    font-size: 18px;
+}
+
+.contact-left-col h5{
+    text-align: left;
+    font-size: 18px;
+    font-weight: 100;
+}
+.contact-left-col p{
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+}
+.contact-right-sub-row{
+
+    display: flex;
+    align-items: center;
+    margin-top: 5%;  
+}
+.contact-right-sub-row .fas{
+font-size: 25px;
+color: chocolate;
+
+}
+.information-title{
+    margin-left: 30px;
+}
+
+.social-icon .fab{
+
+    margin-right: 15px;
+    margin-top: 15px;
+    font-size: 30px;
+    color: chocolate;
+    transition: 0.5s;
+}
+.fa-facebook:hover{
+   color:#129AF6 ;
+}
+.fa-instagram:hover{
+    color:#B33785 ;
+ }
+ .fa-linkedin:hover{
+    color:#0B65C3 ;
+ }
+ .fa-github:hover{
+    color:#25292F ;
+ }
+.contact-right-col{
+    width: 30%;
+    text-align: left;
+    margin-right: 15%;
+    display: flex;
+    justify-content:space-around;
+    flex-direction:column;
+    font-size: 20px;
+
+}
+.forms{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    
+}
+.form-right-sub-col{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;   
+}
+.form-right-sub-col input{
+
+    padding: 10px;
+    border: 5px solid lightgray;
+    border-radius: 15px;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px 10px 0px 0px ;
+    transition: 0.5s;
+    width: 40%;
+}
+.forms input{
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif; 
+    border: 5px solid lightgray;
+    border-radius: 15px;
+    outline: none;
+    transition: 0.5s;
+}
+.forms input::placeholder{
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+
+}
+
+.forms textarea{
+    padding: 10px;
+    margin-bottom: 10px; 
+    font-family: 'Poppins', sans-serif;
+    border: 5px solid lightgray;
+    border-radius: 15px;
+    outline: none;
+    transition: 0.5s;
+}
+.forms textarea::placeholder{
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+
+}
+.form-right-sub-col input:hover{
+   
+    border: 5px solid chocolate;  
+}
+.forms input:hover{
+   
+    border: 5px solid chocolate;  
+}
+.forms textarea:hover{
+   
+    border: 5px solid chocolate;  
+}
+.forms a{
+    text-decoration: none;
+    color: chocolate;
+    background: transparent;
+    border: 1px solid chocolate;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 15px;
+    transition: 0.8s;
+    width: 25%;
+
+}
+
+.forms a:hover{
+    color: white;
+    background: chocolate;
+}
+
+/*-----------------------------Footer-------------------*/
+.footer-container{
+    text-align: center;
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif; ;
+  
+}
+.footer-container span{
+    margin-top: 30px;
+    
+  
+}
+.footer-container a{
+
+    text-decoration: none;
+    color: chocolate;
+    transition: 0.5s;
+    
+    
+}
+
+.footer-container a:hover{
+
+    font-weight: 800;
+    
+}
+
+/*-------------------------------------------------Resposive--------------------------------------*/
+
+
+@media (max-width: 690px)
+{
+
+/*---Preloader-------------------*/ 
+
+#preloader{
+
+    background-size: 80px;
+
+}
+/*---header-------------------*/ 
+
+.header-row{
+
+    flex-direction: column;   
+}
+.logo h1{
+
+    font-size: 30px;
+}
+
+.nav-links ul li{
+
+    display: block;
+    padding: 50px 12px 30px;
+}
+
+
+.nav-links {
+
+    position: absolute;
+    background-color: #222;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    right:100%;
+    text-align: center;
+    z-index: 1;
+    transition: 1s;
+    overflow: hidden;
+  
+}
+
+.navigation .fa{
+
+    display: block;
+    color: chocolate;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    text-align: left;
+
+}
+
+.navigation .fa-times{
+
+    font-size: 30px;
+    padding: 20px 0 0 20px;
+ 
+ }
+
+.header-row-2{
+
+    margin-top: 80%;
+}
+.header-row-2 h3{
+
+    font-size: 15px;
+ 
+}
+
+.header-row-2 h1{
+
+    font-size: 40px; 
+}
+
+
+.header-row-2 h2{
+
+    font-size: 25px;
+}
+.header-row-2 a{
+
+    font-size: 10px;
+}
+
+/*---about-------------------*/ 
+
+
+.about-container{
+    height: 90vh;
+}
+.about-container p::before{
+
+    left: 26%;  
+}
+.about-container p::after{
+
+    right: 26%;
+}
+.about-row{
+
+    flex-direction:column;
+    width: 100%; 
+}
+
+.about-row .about-img img {
+
+    width: 220px;
+}
+
+.about-row .about-text{
+    width: 80%; 
+    margin:0 10% 0 10% ;  
+}
+
+.about-row .about-text h1{
+
+    font-size: 15px;
+}
+
+.about-row .about-text p{
+
+    font-size: 12px;
+    margin-bottom: 20px;
+
+}
+
+.about-row .about-text a{
+
+    font-size: 12px;
+    
+}
+  
+/*---services-------------------*/   
+
+
+.services-container{
+    height: 130vh;
+
+}
+.services-container p::before{
+    left: 18%;
+}
+.services-container p::after{
+
+    right: 18%;
+}
+.services-row{
+
+    flex-direction: column;
+    margin: 60px 60px 60px 60px;
+}
+
+.services-card{
+
+    width: 100%;
+    margin: 0px 0 15px 0;
+}
+
+.services-card-body{
+
+    padding: 20px;
+         
+}
+
+.services-card-body .fas{
+
+    font-size: 30px;
+     
+}
+
+.services-card-body h2{
+
+    font-size: 15px;
+        
+}
+
+.services-card-body h4{
+    font-size: 10px;
+      
+}
+
+
+/*--------skill-------------------*/
+
+    .skill-container{
+        height: 120vh;
+        width: 100%;
+    }
+    
+    .skill-container p::before{
+    
+        left: 22.5%;
+    }
+    .skill-container p::after{
+    
+        right: 22.5%;
+    }
+
+    .skill-row{
+
+        flex-direction: column;
+        
+    }
+    .skill-text{
+    
+        width: 80%;
+        margin: 4% 0% 0 10%;
+        
+    }
+    .skill-text h3{
+      
+         font-size: 16px;
+    }
+    
+    .skill-text p{
+       
+        font-size: 12px; 
+        margin-bottom: 20px;   
+    }
+    
+    .skill-text a{
+    
+        top: 0;
+        font-size: 10px;
+    }
+    
+    .skill-list-container{
+        width: 100%;
+        margin: 10% 20% 0% 0%;
+        
+    }
+    
+    .skill-list-1,.skill-list-2,.skill-list-3,.skill-list-4
+    ,.skill-list-5,.skill-list-6,.skill-list-7{
+        margin-bottom:60px;
+    }  
+   
+
+/*---Showcase-------------------*/
+
+
+.swiper-container h1{
+
+    font-size: 25px;
+
+}
+.swiper-container p::before{
+
+    left: 8%;
+    top: 25%;
+}
+.swiper-container p::after{
+
+    right: 8%;
+    top: 25%;
+}
+
+.swiper-wrapper{
+  
+    align-items: center;
+        
+}
+.swiper-slide  img{
+
+    width:325px;
+    margin-top: -200px;
+  
+
+    
+}   
+.swiper-slide h3{
+
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+    
+
+}
+.swiper-slide a{
+    text-decoration: none;
+    color: chocolate;
+    background: transparent;
+    border: 1px solid chocolate;
+    padding: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: 0.5s;
+
+}
+ 
+/*contact---*/ 
+.contact-container{
+    height: 142vh;
+    margin: 0%;
+} 
+
+.contact-container p::before{
+
+    left: 22%;
+}
+.contact-container p::after{
+
+    right: 22%;
+}
+.contact-row{
+    flex-direction: column;  
+}
+.contact-left-col{
+
+    width: 80%;
+    margin: 0;
+}
+
+.contact-left-col h3{
+    font-size: 17px;
+    margin-top: 30px;
+}
+
+
+.contact-left-col h4{
+
+    font-size: 14px;
+}
+
+.contact-left-col h5{
+    font-size: 14px; 
+}
+.contact-left-col p{
+    font-size: 12px;
+    margin-top: 5px;
+    
+}
+
+.contact-right-col{
+    width: 80%;
+    margin:5% 0 0 0;
+}
+
+.form-right-sub-col input{
+
+    padding: 2px;
+    width: 50%;
+}
+.forms input{
+    padding: 8px;
+    transition: 0.5s;
+}
+.forms input::placeholder{
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+
+}
+
+.forms textarea{
+    padding: 8px;
+}
+.forms textarea::placeholder{
+
+    font-size: 10px;
+
+}
+
+.forms a{
+    font-size: 10px;
+}
+
+/*footer---*/
+    .footer-container{
+      font-size: 12px;
+      margin: 0;   
+    }
+}
